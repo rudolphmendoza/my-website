@@ -1,1 +1,18 @@
-css
+/* ID SELECTOR */
+#heading {
+    font-size:300%;
+}
+
+/* CLASS SELECTOR */
+.crimson {
+    color: crimson;
+}
+
+/* TYPE SELECTOR */
+p {
+    color: hotpink;
+}
+
+img {
+    float:right;
+}
