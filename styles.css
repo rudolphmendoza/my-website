@@ -1,14 +1,38 @@
 /* ID SELECTOR */
 #heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:300%;
 }
 
 /* CLASS SELECTOR */
 .crimson {
-    color: crimson;
+    color: rgb(220, 20, 60);
 }
 
 /* TYPE SELECTOR */
 p {
     color: hotpink;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+/* RELATIONAL SELECTOR */
+section#visit_again>ul {
+    color: teal;
+}
+
+main em {
+    color: brown
+}
+
+section#cali a:visited{
+    font-size: 200%;
+    color: darkblue;
+}
+
+section#cali a:hover{
+    font-size: 200%;
+    color: olivedrab;
 }
