@@ -1,15 +1,34 @@
-/* ID SELECTOR */
+header {
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20 px;
+}
+
 #heading {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:300%;
+    font-size: 300%;
+    background-color: blanchedalmond;
+    padding: 1rem 2rem;
+    text-align: center;
 }
 
-/* CLASS SELECTOR */
+#korea {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
 .crimson {
-    color: rgb(220, 20, 60);
+    color: rgb(105, 30, 45);
 }
 
-/* TYPE SELECTOR */
 p {
     color: hotpink;
 }
@@ -18,21 +37,36 @@ h2 {
     text-decoration: underline;
 }
 
-/* RELATIONAL SELECTOR */
 section#visit_again>ul {
     color: teal;
+    padding: 25px 50px;
+    border: 25px;
+    border-style: double;
 }
 
 main em {
     color: brown
 }
 
-section#cali a:visited{
+section#cali a:visited {
     font-size: 200%;
     color: darkblue;
 }
 
-section#cali a:hover{
+section#cali a:hover {
     font-size: 200%;
     color: olivedrab;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.columns section {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: #f9f9f9;
 }
