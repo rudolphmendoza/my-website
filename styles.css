@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: #87CEEB;
     font-family: 'Open Sans', sans-serif;
@@ -6,7 +7,9 @@ body {
     color: #333333;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -22,6 +25,7 @@ main em {
     color: rgb(105, 30, 45);
 }
 
+/* === Layout Containers === */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -31,19 +35,6 @@ main em {
 header {
     text-align: center;
     padding-bottom: 20px;
-}
-
-.columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.columns section {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid lightgray;
-    background-color: #f9f9f9;
 }
 
 #heading {
@@ -62,41 +53,7 @@ header {
     font-style: italic;
 }
 
-.heading-with-flag {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 1rem;
-}
-
-.flag-icon {
-    width: 80px;
-    height: auto;
-}
-
-#korea, #japan, #germany, #canada, #cali, #hawaii {
-    padding: 50px 30px 50px 80px;
-    background: linear-gradient(to right, #e0f7fa, #ffffff);
-}
-
-section#visit_again > ul {
-    border: 5px double teal;
-    background-color: #f0f8ff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-section#cali a:visited {
-    font-size: 200%;
-    color: darkblue;
-}
-
-section#cali a:hover {
-    font-size: 200%;
-    color: olivedrab;
-}
-
+/* === Navigation Styles === */
 nav {
     background: linear-gradient(to right, #a8e063, #56ab2f);
     padding: 12px 0;
@@ -123,6 +80,79 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+/* === Flex Navigation Box === */
+.flex-box-nav h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: #C8DFEE;
+    padding: 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+li {
+    background: #6FABCF;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    margin: 5px;
+    min-width: 120px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* === Section Styling === */
+#korea,
+#japan,
+#germany,
+#canada,
+#cali,
+#hawaii {
+    padding: 50px 30px 50px 80px;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+.heading-with-flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.flag-icon {
+    width: 80px;
+    height: auto;
+}
+
+section#visit_again>ul {
+    border: 5px double teal;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section#cali a:visited {
+    font-size: 200%;
+    color: darkblue;
+}
+
+section#cali a:hover {
+    font-size: 200%;
+    color: olivedrab;
+}
+
+/* === Image and Text Layout === */
 .image-text {
     display: flex;
     align-items: center;
@@ -145,6 +175,21 @@ nav a:hover {
     font-size: 1.1rem;
 }
 
+/* === Columns (Flexible Section Layout) === */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.columns section {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: #f9f9f9;
+}
+
+/* === Under Construction Styling === */
 .under-construction {
     text-align: center;
     padding: 100px 20px;
@@ -174,6 +219,76 @@ nav a:hover {
     display: block;
 }
 
+/* === Grid Section === */
+.grid-section {
+    padding: 50px 30px;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.grid-section h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* === Map Section === */
+.map-section {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.map-image-section {
+    margin-top: 30px;
+}
+
+.usa-map {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+}
+
+/* === Footer === */
 .site-footer {
     background: linear-gradient(to right, #56ab2f, #a8e063);
     color: white;
@@ -191,4 +306,77 @@ nav a:hover {
 
 .site-footer p {
     margin: 0;
+=======
+header {
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20 px;
+}
+
+#heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 300%;
+    background-color: blanchedalmond;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+#korea {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+
+.crimson {
+    color: rgb(105, 30, 45);
+}
+
+p {
+    color: hotpink;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+section#visit_again>ul {
+    color: teal;
+    padding: 25px 50px;
+    border: 25px;
+    border-style: double;
+}
+
+main em {
+    color: brown
+}
+
+section#cali a:visited {
+    font-size: 200%;
+    color: darkblue;
+}
+
+section#cali a:hover {
+    font-size: 200%;
+    color: olivedrab;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.columns section {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: #f9f9f9;
+>>>>>>> 42c9c5f4f407c39d38ac1dbc7d9fec6ea563b942
 }
