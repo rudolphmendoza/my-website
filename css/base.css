@@ -1,0 +1,19 @@
+body {
+    background-color: #87CEEB;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+main em {
+    color: brown;
+}

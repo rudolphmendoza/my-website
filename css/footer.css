@@ -1,0 +1,18 @@
+.site-footer {
+    background: linear-gradient(to right, #56ab2f, #a8e063);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    border-top: 5px solid #4b8b3b;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.site-footer strong {
+    color: #f0f8ff;
+}
+
+.site-footer p {
+    margin: 0;
+}

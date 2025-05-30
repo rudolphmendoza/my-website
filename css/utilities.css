@@ -1,0 +1,9 @@
+.crimson {
+    color: rgb(105, 30, 45);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
