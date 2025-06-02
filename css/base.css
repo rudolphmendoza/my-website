@@ -10,10 +10,6 @@ h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
 }
 
-h2 {
-    text-decoration: underline;
-}
-
 main em {
     color: brown;
 }
