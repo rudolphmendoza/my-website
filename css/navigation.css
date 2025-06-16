@@ -1,27 +1,29 @@
+/* Default: Horizontal layout */
 nav {
-    background: linear-gradient(to right, #a8e063, #56ab2f);
-    padding: 12px 0;
-    text-align: center;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
+/* Remove the pipe symbols for mobile — best to handle those with CSS instead */
 nav a {
-    font-family: 'Fredoka', sans-serif;
-    color: white;
     text-decoration: none;
-    margin: 0 15px;
-    padding: 10px 15px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 5px 10px;
+    color: black;
 }
 
 nav a:hover {
     background-color: #4b8b2a;
     transform: scale(1.05);
+}
+
+/* Responsive: Vertical layout for small screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .flex-box-nav h2 {
@@ -52,4 +54,137 @@ li {
 a {
     text-decoration: none;
     color: #000;
+}
+
+.grid-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-nav li {
+  background-color: #f0f0f0; /* optional for styling */
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.grid-nav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+
+.grid-nav li a:hover {
+  color: #007acc;
+}
+
+/* Responsive layout: switch to vertical on smaller screens */
+@media (max-width: 600px) {
+  .grid-nav {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-nav li {
+    width: 100%;
+  }
+}
+
+/* Responsive Featured Destinations Nav */
+.responsive-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #C8DFEE;
+}
+
+.responsive-nav li {
+    background: #6FABCF;
+    padding: 15px;
+    text-align: center;
+    flex: 1 1 auto;
+    margin: 5px;
+    min-width: 120px;
+}
+
+.responsive-nav li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.responsive-nav li a:hover {
+    background-color: #4b8b2a;
+    color: white;
+}
+
+/* Switch to vertical if items wrap */
+@media (max-width: 600px) {
+    .responsive-nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* Featured Destinations Nav - one row until words wrap */
+ul.responsive-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #C8DFEE;
+    overflow-x: auto;
+}
+
+ul.responsive-nav li {
+    background: #6FABCF;
+    padding: 15px;
+    text-align: center;
+    min-width: max-content;
+    white-space: nowrap;
+}
+
+ul.responsive-nav li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Optional hover effect */
+ul.responsive-nav li a:hover {
+    background-color: #4b8b2a;
+    color: white;
+}
+
+/* Switch to vertical when screen is too narrow */
+@media (max-width: 600px) {
+    ul.responsive-nav {
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    ul.responsive-nav li {
+        width: 100%;
+        min-width: unset;
+    }
 }
