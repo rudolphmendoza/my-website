@@ -4,3 +4,5 @@
 - In sections.css line 9, font-weight: bold; was added.
 
 2. The design could benefit from a more cohesive color scheme and font choices (though this is subjected to personal preference). Even adding a small logo or banner at the top would help give your site a stronger identity.
+- In base.css line 3, changed font: font-family: Arial, Helvetica, sans-serif;
+- In base.css line 6, changed text color: color: #215e97;
