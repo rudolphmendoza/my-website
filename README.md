@@ -3,4 +3,4 @@
 - In layout.css line 3, font-weight: bold; was added.
 - In sections.css line 9, font-weight: bold; was added.
 
-3. The design could benefit from a more cohesive color scheme and font choices (though this is subjected to personal preference). Even adding a small logo or banner at the top would help give your site a stronger identity.
+2. The design could benefit from a more cohesive color scheme and font choices (though this is subjected to personal preference). Even adding a small logo or banner at the top would help give your site a stronger identity.
