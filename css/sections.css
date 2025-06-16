@@ -6,6 +6,7 @@
 #hawaii {
     padding: 50px 30px 50px 80px;
     background: linear-gradient(to right, #e0f7fa, #ffffff);
+    font-weight: bold;
 }
 
 .heading-with-flag {
